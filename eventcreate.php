@@ -25,14 +25,14 @@ else {
     </div>
    <?php
 
-include 'db.php';
+include_once 'db.php';
 ?>
     <div class="container addp">
     <form method="post" enctype="multipart/form-data">
         <div class="card"   style="padding:10px">
         <?php
 
-        include '../db.php';
+        include_once 'db.php';
         ?>
 
         <div class="row">

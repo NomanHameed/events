@@ -71,7 +71,11 @@ else {
           $gathering_type = isset($_GET['event']) ? $_GET['event'] : '';
           $start = ($page > 1) ? ($page * $perpage) - $perpage : 0;
 
-          $queryproduct = "SELECT SQL_CALC_FOUND_ROWS * FROM events WHERE gathering_type = '{$gathering_type}' ORDER BY id DESC LIMIT {$start}, 16";
+          $queryproduct = "SELECT SQL_CALC_FOUND_ROWS * FROM events WHERE user_id = '{$idsess}'";
+          if(!empty($gathering_type))
+              $queryproduct.= " AND gathering_type = '{$gathering_type}'";
+
+          $queryproduct.= " ORDER BY id DESC LIMIT {$start}, 16";
           $result = $connection->query($queryproduct);
 
           //pages

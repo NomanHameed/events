@@ -89,9 +89,14 @@ $id_category =$_GET['id'];
                   <div class="card hoverable animated slideInUp wow">
                     <div class="card-image">
                         <a href="product.php?id=<?= $id_product; ?>">
-                          <img src="products/<?= $thumbnail_product; ?>"></a>
-                        <span class="card-title grey-text"><?= $name_product; ?></span>
+                            <img width="100%" height="200px" src="products/<?= $thumbnail_product; ?>">
+                        </a>
                         <a href="product.php?id=<?= $id_product; ?>" class="btn-floating halfway-fab waves-effect waves-light right"><i class="material-icons">add</i></a>
+                      </div>
+                      <div class="card-body">
+                            <h4 class="card-title">
+                                <span class="card-title grey-text"><?=  strlen($name_product) > 14 ? substr($name_product, 0, 10). '...': $name_product; ?></span>
+                            </h4>
                       </div>
                       <div class="card-action">
                         <div class="container-fluid">
