@@ -42,7 +42,7 @@ $category = $_GET['id'];
            <div class="col s12 m4">
              <div class="card hoverable animated slideInUp wow">
                <div class="card-image">
-                     <img src="../products/<?= $thumbnail; ?>">
+                     <img width="100%" height="200px" src="../products/<?= $thumbnail; ?>">
                    <span class="card-title grey-text"><?= $name; ?></span>
                  </div>
                  <div class="card-content">

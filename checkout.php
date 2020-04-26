@@ -50,6 +50,9 @@ else {
             <div class="input-field col s6">
               <select class="icons" name="country" value="<?= $country_sess; ?>">
           <option value=""  disabled selected>Choose your country</option>
+          <option value="Pakisatan">Pakisatan</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
           <option value="Morocco">Morocco</option>
           <option value="Egypt">Egypt</option>
           <option value="Algeria">Algeria</option>

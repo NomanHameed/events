@@ -16,21 +16,6 @@ require $nav; ?>
 
 <div class="container-fluid home" id="top">
   <div class="container search">
-    <nav class="animated slideInUp wow">
-      <div class="nav-wrapper">
-        <form method="GET" action="search.php">
-          <div class="input-field">
-            <input id="search" class="searching" type="search" name='searched' required>
-            <label for="search"><i class="material-icons">search</i></label>
-            <i class="material-icons">close</i>
-          </div>
-
-          <div class="center-align">
-            <button type="submit" name="search" class="blue waves-light miaw waves-effect btn hide">Search</button>
-          </div>
-        </form>
-      </div>
-    </nav>
   </div>
 </div>
 
@@ -97,9 +82,9 @@ require $nav; ?>
             </div>
           </div>
 
-          <div class="container-fluid center-align categories">
+          <div class="container-fluid center-align categories ">
             <a href="#category" class="button-rounded btn-large waves-effect waves-light">Categories</a>
-            <div class="container" id="category">
+            <div class="container" id="category" style="margin-top:70px; text-align:center">
               <div class="row">
                 <?php
 
@@ -115,12 +100,14 @@ require $nav; ?>
 
                     ?>
 
-                    <div class="col s12 m4">
-                      <div class="card hoverable animated slideInUp wow">
-                        <div class="card-image">
-                          <a href="category.php?id=<?= $id_category; ?>"><img src="src/img/<?= $icon_category; ?>.png" alt=""></a>
-                          <span class="card-title black-text"><?= $name_category; ?></span>
-                        </div>
+                    <div class="col s12 m4" style="display: block;height: 70px; text-align:center;">
+                      <div class="card hoverable animated slideInUp wow center-align">
+                        <div class="card-image" >
+                          <a href="category.php?id=<?= $id_category; ?>">
+                          <span  class="card-title black-text"><?= $name_category; ?></span>
+                        
+                          </a>
+                          </div>
                       </div>
                     </div>
 

@@ -29,7 +29,8 @@ require 'includes/navconnected.php'; }
 
 <div class="container addproduct">
   <div class="container">
-    <div class="row">
+  <div class="row">
+         
         <?php
         include '../db.php';
 
@@ -44,13 +45,12 @@ require 'includes/navconnected.php'; }
             $icon_category = $rowcategory['icon'];
 
         ?>
-
-        <div class="col s12 m4">
-          <div class="card hoverable animated slideInUp wow">
+        <div class="col s12 m4" style="padding:25px">
+          <div class="card hoverable animated slideInUp wow" >
             <div class="card-image">
               <a href="addp.php?id=<?= $id_category; ?>&category=<?= $name_category; ?>&icon=<?= $icon_category; ?>">
-                <img src="src/img/<?= $icon_category; ?>.png" alt=""></a>
               <span class="card-title blue-text"><?= $name_category; ?></span>
+              </a>
             </div>
           </div>
         </div>

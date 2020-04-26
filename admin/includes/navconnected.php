@@ -1,13 +1,13 @@
 
 <ul id="dropdown2" class="dropdown-content">
-<li><a class="blue-text" href="editprofile">Edit</a></li>
+<li><a class="blue-text" href="editprofile.php">Edit</a></li>
 <li><a class="blue-text" href="logout.php">Log out</a></li>
 </ul>
 <div class="navbar-fixed">
  <nav class="navblack">
    <div class="nav-wrapper nav-wrapper-2 container white">
    <ul class="left hide-on-med-and-down">
-     <li><a href="index.php" class="dark-text">SmartShop</a></li>
+     <li><a href="index.php" class="dark-text">Events</a></li>
 
    </ul>
 

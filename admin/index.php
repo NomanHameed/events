@@ -14,7 +14,7 @@ if ($_SESSION['role'] !== 'admin') {
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="../index.php" class="breadcrumb">Smartshop</a>
+            <a href="../index.php" class="breadcrumb">Events</a>
             <a href="index.php" class="breadcrumb">Dashboard</a>
           </div>
         </div>
@@ -27,7 +27,6 @@ if ($_SESSION['role'] !== 'admin') {
          <div class="col s12 m4">
            <div class="card horizontal">
              <div class="card-image">
-               <img src="src/img/pixel.png" alt="" />
              </div>
              <div class="card-stacked">
               <div class="card-content">
@@ -43,7 +42,6 @@ if ($_SESSION['role'] !== 'admin') {
          <div class="col s12 m4">
            <div class="card horizontal">
              <div class="card-image">
-               <img src="src/img/cat.png" alt="" />
              </div>
              <div class="card-stacked">
         <div class="card-content">
@@ -60,7 +58,6 @@ if ($_SESSION['role'] !== 'admin') {
          <div class="col s12 m4">
            <div class="card horizontal">
              <div class="card-image">
-               <img src="src/img/user.png" alt="" />
              </div>
              <div class="card-stacked">
               <div class="card-content">
@@ -72,6 +69,7 @@ if ($_SESSION['role'] !== 'admin') {
              </div>
            </div>
          </div>
+    </div>
          <?php
 
             include '../db.php';
@@ -105,6 +103,7 @@ if ($_SESSION['role'] !== 'admin') {
               }
             }
           ?>
+    <div class="row">
          <div class="col s12 m4">
            <div class="card horizontal red lighten-1">
              <div class="card-stacked">

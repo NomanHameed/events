@@ -1,17 +1,11 @@
 
 
-<!-- JQUERY FIRST -->
 <script src="src/js/jquery-2.1.4.js"></script>
-<!-- Typed Js -->
 <script type="text/javascript" src="src/js/typed.js"></script>
-<!-- Progress bar -->
 <script src='src/js/nprogress.js'></script>
-<!-- wow js-->
 <script src="src/js/wow.min.js"></script>
-<!-- Materialize Js -->
 <script src="src/js/materialize.min.js"></script>
 <script>
-<!-- //SMOOTH SCROLL -->
                 $(document).on('click', 'a[href*="#"]:not([href="#"])', function(e) {
                   if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
                     var target = $(this.hash);

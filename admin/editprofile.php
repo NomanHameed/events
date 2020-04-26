@@ -5,11 +5,11 @@ session_start();
 if ($_SESSION['role'] !== 'admin') {
   header('Location: ../index.php');
 }
-
+$user_id = $_SESSION['id'];
  require 'includes/header.php';
  require 'includes/navconnected.php'; //require $nav;?>
 
- <div class="container-fluid product-page">
+  <div class="container-fluid product-page">
    <div class="container current-page">
       <nav>
         <div class="nav-wrapper">
@@ -20,7 +20,7 @@ if ($_SESSION['role'] !== 'admin') {
         </div>
       </nav>
     </div>
-   </div>
+  </div>
 
 <div class="container editprofile">
   <div class="container">
@@ -55,7 +55,7 @@ if ($_SESSION['role'] !== 'admin') {
 
               include '../db.php';
               // update info on users Toble
-              $queryupdate = "UPDATE users SET email ='$newemail', password ='$newpassword' WHERE role='admin'";
+              $queryupdate = "UPDATE users SET password ='$newpassword' WHERE id = '$user_id' AND role='admin'";
               $result = $connection->query($queryupdate);
 
               echo "<meta http-equiv='refresh' content='0'; url='editprofile' />";

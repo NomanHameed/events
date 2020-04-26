@@ -34,10 +34,6 @@ require 'includes/navconnected.php'; } ?>
 
        include '../db.php';
        ?>
-      <div class="center-align">
-        <img class="responsive-img" src="src/img/<?= $caticon; ?>.png">
-      </div>
-
       <div class="row">
         <div class="input-field col s6">
           <i class="fa fa-product-hunt prefix"></i>

@@ -51,12 +51,9 @@ if ($_SESSION['role'] !== 'admin') {
 
            <div class="col s12 m4">
              <div class="card hoverable animated slideInUp wow">
-               <div class="card-image">
-                 <a href="productstock.php?id=<?= $id_cat; ?>&category=<?= $name; ?>&icon=<?= $icon; ?>">
-                   <img src="src/img/<?= $icon; ?>.png" alt=""></a>
-                 <span class="card-title blue-text"><?= $name; ?>s</span>
-               </div>
                <div class="card-content">
+               <a href="productstock.php?id=<?= $id_cat; ?>&category=<?= $name; ?>&icon=<?= $icon; ?>">
+               <span class="card-title blue-text"><?= $name; ?>s</span>
                  <h5 class="white-text"><?= $total; ?></h5>
                </div>
              </div>

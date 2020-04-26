@@ -30,7 +30,7 @@ if ($_SESSION['role'] !== 'admin') {
              <img src="src/img/add.png" alt="">
            </div>
            <div class="card-action">
-             <a class="blue-text" href="addproduct">Add Product</a>
+             <a class="blue-text" href="addproduct.php">Add Product</a>
            </div>
          </div>
        </div>
@@ -38,25 +38,39 @@ if ($_SESSION['role'] !== 'admin') {
        <div class="col s12 m4">
          <div class="card">
            <div class="card-image">
-             <img src="src/img/stats.png" alt="">
+             <img src="src/img/add.png" alt="">
            </div>
            <div class="card-action">
-             <a class="blue-text" href="stats">See Stats</a>
+             <a class="blue-text" href="createcategory.php">Add Category</a>
            </div>
          </div>
        </div>
 
        <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image">
+             <img src="src/img/cat.png" alt="">
+           </div>
+           <div class="card-action">
+             <a class="blue-text" href="products.php">All Products</a>
+           </div>
+         </div>
+       </div>
+
+
+     </div>
+     <div class="row">
+     <div class="col s12 m4">
          <div class="card">
            <div class="card-image">
              <img src="src/img/edit.png" alt="">
            </div>
            <div class="card-action">
-             <a class="blue-text" href="editproduct">Commands</a>
+             <a class="blue-text" href="editproduct.php">Sales</a>
            </div>
          </div>
        </div>
-     </div>
+      </div>
    </div>
 
 

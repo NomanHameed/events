@@ -98,7 +98,7 @@ $id_product =$_GET['id'];
             if (isset($_POST['buy'])) {
 
                if (!isset($_SESSION['logged_in'])) {
-                 echo "<meta http-equiv='refresh' content='0;url=http://localhost/Smartshop/sign' />";
+                 echo "<meta http-equiv='refresh' content='0;url=http://localhost/Events/sign.php' />";
                }
 
                else {

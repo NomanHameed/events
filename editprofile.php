@@ -17,7 +17,7 @@ else {
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="index.php" class="breadcrumb">Smartshop</a>
+            <a href="index.php" class="breadcrumb">Events</a>
             <a href="editprofile.php" class="breadcrumb">Edit Profile</a>
           </div>
         </div>

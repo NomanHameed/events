@@ -16,21 +16,9 @@ if (isset($_POST['signup'])) {
 
   //connecting & inserting data
 
-  $query = "INSERT INTO users(email,
-firstname,
-lastname,
-password,
-address,
-city,
-country,
-role) VALUES ('$email',
-'$firstname',
-'"$lastname',
-'$encryptedpass',
-'$address',
-'$city',
-'$country',
-'client')";
+  $query = "INSERT INTO users(email,firstname,lastname,password,address,city,country,role) 
+  VALUES ('$email','$firstname',
+'$lastname','$encryptedpass','$address','$city','$country','client')";
 
 if ($connection->query($query) === TRUE) {
 

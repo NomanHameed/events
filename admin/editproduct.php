@@ -16,7 +16,7 @@ if ($_SESSION['role'] !== 'admin') {
           <div class="col s12">
             <a href="index.php" class="breadcrumb">Dashboard</a>
             <a href="infoproduct.php" class="breadcrumb">Products</a>
-            <a href="editproduct.php" class="breadcrumb">Commands</a>
+            <a href="editproduct.php" class="breadcrumb">Sales</a>
           </div>
         </div>
       </nav>
